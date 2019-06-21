@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Easy_HP</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+  <div class="wrapper">
+
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <div class="logo">Easy</div>
+        </div>
+        <div class="header-right">
+          <%= link_to '会社案内' , 'pages/co_info' , class:"info" %>
+          <%= link_to 'サービス一覧' , 'pages/service' , class:"info" %>
+          <%= link_to 'お問い合わせ' , 'pages/contact' , class:"info" %>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="service_all">サービス一覧</div>
+        <div class="qotaelu_info">
+          <%= image_tag 'qotaelu.png' , :size => '300x200' %>
+        </div>
+        <div class="service1">
+          <div class="qotaelu_logo">
+            <%= image_tag 'h_logo.jpg'%>
+          </div>
+          <%# <p>報酬型qaサービスQotaelu</p> %>
+          <a href="#" class="qotaelu_btn">Webサービスへ</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-left">
+          <%= link_to '会社案内' , 'pages/co_info' , class:"info" %>
+          <%= link_to 'サービス一覧' , 'pages/service' , class:"info" %>
+          <%= link_to 'お問い合わせ' , 'pages/contact' , class:"info" %>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  </body>
+</html> 
