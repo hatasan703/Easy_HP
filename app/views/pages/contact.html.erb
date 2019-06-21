@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Easy_HP</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+  <div class="wrapper">
+
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <div class="logo">Easy</div>
+        </div>
+        <div class="header-right">
+          <%= link_to '会社案内' , 'pages/co_info' , class:"info" %>
+          <%= link_to 'サービス一覧' , 'pages/service' , class:"info" %>
+          <%= link_to 'お問い合わせ' , 'pages/contact' , class:"info" %>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="main_contact">
+          <div class="main_contact2">サービスに関するお問い合わせ</div>
+          <p>各種サービスに関するお問い合わせは、各サービスのお問い合わせ窓口からお問い合わせください。</p>
+          <%= link_to 'QOTAELUヘルプページへ' , '#' , class:"help_q"%>
+        </div>
+        
+        <div class="main_contact">
+          <div class="main_contact2">その他のサービスに関するお問い合わせ</div>
+        </div>
+        <div class="other_contact">株式会社Easy・当ウェブサイトに関するお問い合わせは下記メールよりお問い合わせください。
+        <%= link_to 'プライバシーポリシー' , '#' , class:"privacy" %>
+        </div>
+        <div class="box_5">
+          <div class="box5">
+            <p>easy@easy.com</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-left">
+          <%= link_to '会社案内' , 'pages/co_info' , class:"info" %>
+          <%= link_to 'サービス一覧' , 'pages/service' , class:"info" %>
+          <%= link_to 'お問い合わせ' , 'pages/contact' , class:"info" %>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  </body>
+</html> 

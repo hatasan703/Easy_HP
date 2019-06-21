@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Easy_HP</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+  <div class="wrapper">
+
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <div class="logo">Easy</div>
+        </div>
+        <div class="header-right">
+          <%= link_to '会社案内' , 'pages/co_info' , class:"info" %>
+          <%= link_to 'サービス一覧' , 'pages/service' , class:"info" %>
+          <%= link_to 'お問い合わせ' , 'pages/contact' , class:"info" %>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="company_all_center">
+          <div class="company_all">会社概要</div>
+        </div>
+        <ul class="company_list">
+          <li class="company_info">
+            <p>会社名:</p><div>株式会社Easy</div>
+          </li>
+          <li class="company_info">
+            <p>所在地:</p><div>東京都板橋区赤塚新町1-16-2</div>
+          </li>
+          <li class="company_info">
+            <p>代表取締役:</p><div>圃田洋貴</div>
+          </li>
+          <li class="company_info">
+            <p>事業内容:</p><div class="ooo">Webサービス運営</div>
+          </li>
+        </ul>
+      </div>
+      
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-left">
+          <%= link_to '会社案内' , 'pages/co_info' , class:"info" %>
+          <%= link_to 'サービス一覧' , 'pages/service' , class:"info" %>
+          <%= link_to 'お問い合わせ' , 'pages/contact' , class:"info" %>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  </body>
+</html> 

@@ -1,0 +1,172 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body,
+.wrapper {
+  display : flex;
+  flex-direction : column;
+  min-height: 100vh;
+}
+
+header {
+  background-color : #84d5ee;
+  height : 65px;
+  width : 100%;
+}
+
+.container {
+  width : 1170px;
+  padding : 0 15px;
+  margin : 0 auto;
+
+  .header-left {
+    float : left;
+
+    .logo {
+      font-size: 40px;
+      color : white;
+    }
+  }
+
+  .header-right {
+    font-size: 15px;
+    text-align: center;
+    padding-top : 20px;
+
+    .info {
+      text-decoration: none;
+      color : white;
+      padding-right : 30px;
+    }
+  }
+
+  .footer-left {
+    padding-top : 10px;
+
+    .info {
+      text-decoration: none;
+      color : white;
+      padding-right : 30px;
+    }
+  }
+
+  .main_contact {
+    text-align: center;
+
+    .main_contact2 {
+      padding-top: 60px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      border-bottom: solid 2px #84d5ee;
+      display: inline-block;
+    }
+
+    .help_q {
+      font-size: 20px;
+      text-decoration: none;
+    }
+  }
+
+  .other_contact {
+    text-align : center;
+    padding-top : 20px;
+
+    .privacy {
+      display : block;
+      text-align : center;
+    }
+  }
+
+  .box_5 {
+    text-align: center;
+
+    .box5 {
+      border: double 5px #84d5ee;
+      padding: 0.5em 1em;
+      margin: 2em 0;
+      display: inline-block;
+    }
+  }
+
+  .service_all {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+  }
+
+  .qotaelu_info {
+    float: left;
+    padding-top: 50px;
+    padding-left: 250px;
+  }
+
+  .qotaelu_logo {
+    float: right;
+    padding-right: 350px;
+    padding-top: 20px;
+  }
+
+  .qotaelu_btn {
+    background-color: #60cef0;
+    color: white;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 65px;
+  }
+
+  .company_all_center {
+    text-align: center;
+  }
+
+  .company_all {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #485454;
+    border-bottom: solid 2px #84d5ee;
+    display: inline-block;
+  }
+
+  ul {
+    list-style: none;
+
+    .company_info {
+      padding-top: 40px;
+      padding-left: 250px;
+      color: #485454;
+
+      p {
+        font-weight: 600;
+        color: #485454;
+      }
+
+      .ooo {
+        padding-bottom:100px;
+      }
+    } 
+  }
+}
+
+footer {
+  background-color : #84d5ee;
+  height : 150px;
+  width : 100%;
+  margin-top : auto;
+
+  .footer-right {
+    float: right;
+  }
+}
+
