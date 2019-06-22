@@ -11,7 +11,7 @@ body,
 
 header {
   background-color : #6ac9e6;
-  height : 65px;
+  height : 80px;
   width : 100%;
 }
 
@@ -31,7 +31,8 @@ header {
 
   .header-right {
     font-size: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding-top : 20px;
 
     .info {
