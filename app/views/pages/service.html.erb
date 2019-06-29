@@ -2,16 +2,21 @@
   <div class="wrapper">
     <main>
       <div class="container">
-        <div class="service_all">サービス一覧</div>
-        <div class="qotaelu_info">
-          <%= image_tag 'qotaelu.png' , :size => '300x200' %>
-        </div>
-        <div class="service1">
-          <div class="qotaelu_logo">
-            <%= image_tag 'h_logo.jpg'%>
+        <div class="service_all"><p>サービス一覧</p></div>
+          <div class="service1">
+            <div class="qotaelu_logo">
+              <%= image_tag 'h_logo.jpg' , :size => '342x136' %>
+            </div>
+          </div>
+          <div class="qotaelu_img">
+          <%= image_tag 'qotaelu.png' , :size => '600x400' %>
           </div>
           <%# <p>報酬型qaサービスQotaelu</p> %>
-          <a href="#" class="qotaelu_btn">Webサービスへ</a>
+          <div class="qotaelu_web">
+          <a href="#" class="qotaelu_btn"><p>Webサービスへ</p></a>
+          </div>
+          <p class="line" id="company_form">
+          </p>
         </div>
       </div>
     </main>

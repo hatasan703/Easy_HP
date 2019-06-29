@@ -13,6 +13,7 @@ header {
   background-color : #6ac9e6;
   height : 80px;
   width : 100%;
+  position: fixed;
 }
 
 .container {
@@ -22,11 +23,22 @@ header {
 
   .header-left {
     float : left;
+    margin-top: 5px;
 
     .logo {
       font-size: 40px;
       color : white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      a {
+        text-decoration: none;
+      }
     }
+  }
+
+  .line {
+    border-bottom: solid 2px #485454;
+    padding-top: 100px;
   }
 
   .header-right {
@@ -34,16 +46,39 @@ header {
     display: flex;
     justify-content: center;
     padding-top : 20px;
+    margin-top: 15px;
 
     .info {
+      display: inline-block;
+      position: relative;
       text-decoration: none;
       color : white;
-      padding-right : 30px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    .info::after {
+      border-bottom: solid 3px #485454;
+      bottom: 0;
+      content: "";
+      display: block;
+      transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+      width: 0;
+      padding-top: 5px;
+    }
+
+    .info:hover::after {
+      width: 100%;
+    }
+
+    .info:hover {
+      color: #485454;
     }
   }
 
   .footer-left {
-    padding-top : 10px;
+    padding-top : 20px;
 
     .info {
       text-decoration: none;
@@ -55,18 +90,50 @@ header {
   .main_contact {
     text-align: center;
 
+    .contact2 {
+      font-size: 30px;
+      font-weight: 600;
+
+      p {
+        display: inline-block;
+        border-bottom: solid 4px #6ac9e6;
+        color: #485454;
+        padding-bottom: 5px;
+      }
+    }
+
     .main_contact2 {
       padding-top: 60px;
-      text-align: center;
       font-size: 20px;
       font-weight: 600;
       border-bottom: solid 2px #6ac9e6;
       display: inline-block;
+      color: #485454;
+      padding-bottom: 5px;
+    }
+
+    .contact {
+      padding-top: 20px;
+    }
+
+    .help_qotaelu {
+      background-color: #6ac9e6;
+      margin: 0 auto;
+      width: 300px;
+      height: 30px;
+      margin-top: 20px;
+      padding-top: 10px;
+      border-radius: 50px;
+    }
+
+    .help_qotaelu:hover {
+      background-color: #1ab0ec;
     }
 
     .help_q {
       font-size: 20px;
       text-decoration: none;
+      color: white;
     }
   }
 
@@ -77,6 +144,8 @@ header {
     .privacy {
       display : block;
       text-align : center;
+      text-decoration: none;
+      padding-top: 20px;
     }
   }
 
@@ -93,51 +162,67 @@ header {
 
   .service_all {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 150px;
     font-size: 20px;
     font-weight: 600;
-    color: gray;
-  }
+    color: #485454;
 
-  .qotaelu_info {
-    float: left;
-    padding-top: 50px;
-    padding-left: 250px;
+    p {
+      display: inline-block;
+      border-bottom: solid 4px #6ac9e6;
+      font-size: 30px;
+      padding-bottom: 5px;
+    }
   }
 
   .qotaelu_logo {
-    float: right;
-    padding-right: 350px;
-    padding-top: 20px;
+    text-align: center;
+  }
+
+  .qotaelu_img {
+    text-align: center;
+  }
+
+  .qotaelu_web {
+    text-align: center;
   }
 
   .qotaelu_btn {
     background-color: #6ac9e6;
     color: white;
     display: inline-block;
-    width: 200px;
+    width: 400px;
+    height: 40px;
     text-align: center;
     margin: auto;
     padding: 5px 0;
-    font-size: 1rem;
     text-decoration: none;
     border-radius: 50px;
-    margin-top: 100px;
-    margin-left: 65px;
+    margin-top: 30px;
+
+    p {
+      font-size: 25px;
+      padding-top: 7px;
+    }
+  }
+
+  .qotaelu_btn:hover {
+    background-color: #1ab0ec;
   }
 
   .company_all_center {
     text-align: center;
+    padding-top: 65px;
   }
 
   .company_all {
     text-align: center;
-    font-size: 20px;
-    padding-top: 20px;
+    font-size: 30px;
     font-weight: 600;
     color: #485454;
-    border-bottom: solid 2px #6ac9e6;
+    border-bottom: solid 4px #6ac9e6;
     display: inline-block;
+    padding-bottom: 5px;
   }
 
   ul {
@@ -151,6 +236,12 @@ header {
       p {
         font-weight: 600;
         color: #485454;
+        border-bottom: solid 2px #485454;
+        display: inline-block;
+      }
+
+      div {
+        padding-top: 10px;
       }
 
       .ooo {
@@ -164,10 +255,41 @@ footer {
   background-color : #6ac9e6;
   height : 150px;
   width : 100%;
-  margin-top : auto;
 
   .footer-right {
     float: right;
+  }
+
+  .footer-left {
+    display: flex;
+
+    .info {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color : white;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    .info:hover {
+      color: #485454;
+    }
+
+    .info::after {
+      border-bottom: solid 3px #485454;
+      bottom: 0;
+      content: "";
+      display: block;
+      transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+      width: 0;
+      padding-top: 5px;
+    }
+
+    .info:hover::after {
+      width: 100%;
+    }
   }
 }
 
