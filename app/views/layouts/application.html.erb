@@ -16,13 +16,13 @@
       <div class="container">
         <div class="header-left">
           <div class="logo">
-          Easy
+          <%= link_to 'Easy', root_path, class:"logo" %>
           </div>
         </div>
         <div class="header-right">
-          <%= link_to '会社案内', pages_co_info_path, class:"info" %>
-          <%= link_to 'サービス一覧', pages_service_path, class:"info" %>
-          <%= link_to 'お問い合わせ', pages_contact_path, class:"info" %>
+          <%= link_to '会社案内', {anchor: "company_form"}, class:"info" %>
+          <%= link_to 'サービス一覧', root_path , class:"info" %>
+          <%= link_to 'お問い合わせ', {anchor: "contact_form"}, class:"info" %>
         </div>
       </div>
     </header>
@@ -38,6 +38,7 @@
         </div>
         <div class="footer-right">
         <%= image_tag 'easy.png' , :size =>'100x80' %>
+        </div>
       </div>
     </footer>
 
