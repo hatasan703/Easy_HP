@@ -9,11 +9,16 @@ body,
   min-height: 100vh;
 }
 
-header {
-  background-color : #6ac9e6;
+.header {
+  // background-color : #6ac9e6;
+  background-color : #fff;
   height : 80px;
   width : 100%;
   position: fixed;
+
+    // top: 0;
+    // left: 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .container {
@@ -27,7 +32,7 @@ header {
 
     .logo {
       font-size: 40px;
-      color : white;
+      color : #6ac9e6;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
       a {
@@ -53,6 +58,7 @@ header {
       position: relative;
       text-decoration: none;
       color : white;
+      color : #333;
       padding-right: 30px;
       padding-left: 30px;
     }
@@ -251,8 +257,9 @@ header {
   }
 }
 
-footer {
-  background-color : #6ac9e6;
+.footer {
+  // background-color : #6ac9e6;
+  background: #2a2b32;
   height : 150px;
   width : 100%;
 
