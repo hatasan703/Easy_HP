@@ -1,274 +1,108 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
 
 body,
 .wrapper {
-  display : flex;
-  flex-direction : column;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 .header {
-  // background-color : #6ac9e6;
-  background-color : #fff;
-  height : 80px;
-  width : 100%;
-  position: fixed;
-
-    // top: 0;
-    // left: 0;
-    border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  height: 80px;
+  width: 100%;
+  min-width: 1160px;
+  border-bottom: 1px solid #e5e5e5;
 }
-
-.container {
-  width : 1170px;
-  padding : 0 15px;
-  margin : 0 auto;
-
-  .header-left {
-    float : left;
-    margin-top: 5px;
-
-    .logo {
-      font-size: 40px;
-      color : #6ac9e6;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-      a {
-        text-decoration: none;
-      }
-    }
+.head_contents{
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  .logo {
+    margin-right: 30px;
+  }
+  .header-menu {
+    font-size: 15px;
+    display: flex;
+    padding-top : 20px;
+    margin-top: 15px;
+    width: 1050px;
+    justify-content: flex-end;
+  }
+  .info {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color : white;
+    color : #333;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .info::after {
+    border-bottom: solid 3px #485454;
+    bottom: 0;
+    content: "";
+    display: block;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    width: 0;
+    padding-top: 5px;
   }
 
+  .info:hover::after {
+    width: 100%;
+  }
+}
+
+.container{
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
   .line {
     border-bottom: solid 2px #485454;
     padding-top: 100px;
   }
+}
 
-  .header-right {
-    font-size: 15px;
+.company_list {
+  list-style: none;
+  text-align: center;
+  margin: 50px auto 100px;
+
+  .company_info {
+    padding-top: 40px;
+    color: #485454;
     display: flex;
-    justify-content: center;
-    padding-top : 20px;
-    margin-top: 15px;
+    padding: 2rem 0;
 
-    .info {
-      display: inline-block;
-      position: relative;
-      text-decoration: none;
-      color : white;
-      color : #333;
-      padding-right: 30px;
-      padding-left: 30px;
-    }
+    border-bottom: 1px solid #000;
 
-    .info::after {
-      border-bottom: solid 3px #485454;
-      bottom: 0;
-      content: "";
-      display: block;
-      transition: all .3s ease;
-      -webkit-transition: all .3s ease;
-      width: 0;
-      padding-top: 5px;
-    }
-
-    .info:hover::after {
-      width: 100%;
-    }
-
-    .info:hover {
-      color: #485454;
-    }
-  }
-
-  .footer-left {
-    padding-top : 20px;
-
-    .info {
-      text-decoration: none;
-      color : white;
-      padding-right : 30px;
-    }
-  }
-
-  .main_contact {
-    text-align: center;
-
-    .contact2 {
-      font-size: 30px;
-      font-weight: 600;
-
-      p {
-        display: inline-block;
-        border-bottom: solid 4px #6ac9e6;
-        color: #485454;
-        padding-bottom: 5px;
-      }
-    }
-
-    .main_contact2 {
-      padding-top: 60px;
-      font-size: 20px;
-      font-weight: 600;
-      border-bottom: solid 2px #6ac9e6;
-      display: inline-block;
-      color: #485454;
-      padding-bottom: 5px;
-    }
-
-    .contact {
-      padding-top: 20px;
-    }
-
-    .help_qotaelu {
-      background-color: #6ac9e6;
-      margin: 0 auto;
+    &_title {
       width: 300px;
-      height: 30px;
-      margin-top: 20px;
-      padding-top: 10px;
-      border-radius: 50px;
-    }
-
-    .help_qotaelu:hover {
-      background-color: #1ab0ec;
-    }
-
-    .help_q {
-      font-size: 20px;
-      text-decoration: none;
-      color: white;
-    }
-  }
-
-  .other_contact {
-    text-align : center;
-    padding-top : 20px;
-
-    .privacy {
-      display : block;
-      text-align : center;
-      text-decoration: none;
-      padding-top: 20px;
-    }
-  }
-
-  .box_5 {
-    text-align: center;
-
-    .box5 {
-      border: double 5px #6ac9e6;
-      padding: 0.5em 1em;
-      margin: 2em 0;
-      display: inline-block;
-    }
-  }
-
-  .service_all {
-    text-align: center;
-    padding-top: 150px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #485454;
-
-    p {
-      display: inline-block;
-      border-bottom: solid 4px #6ac9e6;
-      font-size: 30px;
-      padding-bottom: 5px;
-    }
-  }
-
-  .qotaelu_logo {
-    text-align: center;
-  }
-
-  .qotaelu_img {
-    text-align: center;
-  }
-
-  .qotaelu_web {
-    text-align: center;
-  }
-
-  .qotaelu_btn {
-    background-color: #6ac9e6;
-    color: white;
-    display: inline-block;
-    width: 400px;
-    height: 40px;
-    text-align: center;
-    margin: auto;
-    padding: 5px 0;
-    text-decoration: none;
-    border-radius: 50px;
-    margin-top: 30px;
-
-    p {
-      font-size: 25px;
-      padding-top: 7px;
-    }
-  }
-
-  .qotaelu_btn:hover {
-    background-color: #1ab0ec;
-  }
-
-  .company_all_center {
-    text-align: center;
-    padding-top: 65px;
-  }
-
-  .company_all {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    color: #485454;
-    border-bottom: solid 4px #6ac9e6;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-
-  ul {
-    list-style: none;
-
-    .company_info {
-      padding-top: 40px;
-      padding-left: 250px;
+      text-align: left;
+      justify-content: flex-start;
+      font-weight: 600;
       color: #485454;
-
-      p {
-        font-weight: 600;
-        color: #485454;
-        border-bottom: solid 2px #485454;
-        display: inline-block;
-      }
-
-      div {
-        padding-top: 10px;
-      }
-
-      .ooo {
-        padding-bottom:100px;
-      }
-    } 
-  }
+    }
+    &_content{
+      width: 300px;
+      text-align: left;
+      
+    }
+  } 
 }
 
 .footer {
-  // background-color : #6ac9e6;
   background: #2a2b32;
   height : 150px;
   width : 100%;
-
-  .footer-right {
-    float: right;
-  }
+  min-width: 1180px;  
 
   .footer-left {
     display: flex;
+    padding-top : 20px;
+    width: 1170px;
+    margin: 0 auto;
 
     .info {
       display: inline-block;
@@ -278,25 +112,33 @@ body,
       padding-right: 30px;
       padding-left: 30px;
     }
-
     .info:hover {
       color: #485454;
     }
-
-    .info::after {
-      border-bottom: solid 3px #485454;
-      bottom: 0;
-      content: "";
-      display: block;
-      transition: all .3s ease;
-      -webkit-transition: all .3s ease;
-      width: 0;
-      padding-top: 5px;
-    }
-
-    .info:hover::after {
-      width: 100%;
-    }
+  }
+  .copyright {
+    font-size: 1rem;
+    color: #a3a5ad;
+    text-align: center;
+    display: block;
+    margin-top:30px;
   }
 }
 
+
+@media screen and (max-width: 640px) {
+  // .container {width: 100%;}
+  .header,
+  .head_contents,
+  .footer,
+  .container{
+    width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+  }
+
+  .company_info_content,
+  .company_info_title{
+    width: 210px!important;
+  }
+}
