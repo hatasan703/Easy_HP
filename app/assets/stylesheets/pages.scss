@@ -1,23 +1,49 @@
-
+body {
+	background: #f5f9fa;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+html,body {
+  width: 100% !important;
+  font-size: 62.5%;
+  letter-spacing: 0;
+  font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+}
 
 body,
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 .header {
-  background-color: #fff;
-  height: 80px;
-  width: 100%;
-  min-width: 1160px;
   border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+	min-width: 1140px;
+	background: #fff;
 }
-.head_contents{
-  width: 1170px;
-  margin: 0 auto;
-  display: flex;
+.headerWrap{
+  width: 1120px;
+	margin: 0 auto;
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-around;
+  align-items: center;
+  
+  // width: 1120px;
+	// margin: 0 auto;
+	// padding: 20px 0;
+	// display: flex;
+	// justify-content: space-around;
+	// align-items: center;
+
+  // width: 1170px;
+  // margin: 0 auto;
+  // display: flex;
   .logo {
     margin-right: 30px;
   }
@@ -55,53 +81,56 @@ body,
 }
 
 .container{
-  width: 1170px;
-  margin: 0 auto;
+  width: 1120px;
+  margin: 50px auto;
   display: flex;
+  background: #fff;
+
+
   .line {
     border-bottom: solid 2px #485454;
     padding-top: 100px;
   }
 }
 
-.company_list {
-  list-style: none;
-  text-align: center;
-  margin: 50px auto 100px;
+// .company_list {
+//   list-style: none;
+//   text-align: center;
+//   margin: 50px auto 100px;
 
-  .company_info {
-    padding-top: 40px;
-    color: #485454;
-    display: flex;
-    padding: 2rem 0;
+//   .company_info {
+//     padding-top: 40px;
+//     color: #485454;
+//     display: flex;
+//     padding: 2rem 0;
 
-    border-bottom: 1px solid #000;
+//     border-bottom: 1px solid #000;
 
-    &_title {
-      width: 300px;
-      text-align: left;
-      justify-content: flex-start;
-      font-weight: 600;
-      color: #485454;
-    }
-    &_content{
-      width: 300px;
-      text-align: left;
+//     &_title {
+//       width: 300px;
+//       text-align: left;
+//       justify-content: flex-start;
+//       font-weight: 600;
+//       color: #485454;
+//     }
+//     &_content{
+//       width: 300px;
+//       text-align: left;
       
-    }
-  } 
-}
+//     }
+//   } 
+// }
 
 .footer {
   background: #2a2b32;
   height : 150px;
-  width : 100%;
-  min-width: 1180px;  
+  width: 100%;
+	min-width: 1140px;
 
   .footer-left {
     display: flex;
     padding-top : 20px;
-    width: 1170px;
+    width: 1140px;
     margin: 0 auto;
 
     .info {
@@ -129,16 +158,66 @@ body,
 @media screen and (max-width: 640px) {
   // .container {width: 100%;}
   .header,
-  .head_contents,
+  .headerWrap,
   .footer,
   .container{
     width: 100%;
     min-width: 100%;
     overflow: hidden;
   }
+  .company_list{width: 100%!important;}
 
-  .company_info_content,
-  .company_info_title{
-    width: 210px!important;
-  }
+
+  .header {min-width: 100%;}
+	.headerWrap {
+		height: 60px;
+		padding: 0 5%;
+		justify-content: space-between;
+		// border-bottom: 1px solid #dae1e3;
+		box-sizing: border-box;
+	}
+	.logo {width: 40%;}
+	.logo a {display: block;}
+	.logo img {
+		width: 100%;
+		height: 60px;
+		object-fit: contain;
+	}
+}
+
+
+
+
+// 会社概要
+
+
+// 会社概要
+
+.company_list {
+  width: 70%;
+  margin: 0 auto; 
+  margin-bottom: 50px;
+  background-color: #fff;
+  // padding-bottom: 50px;
+
+  .company_info {
+    padding: 50px 0;
+    color: #485454;
+    display: flex;
+    border-bottom: 1px solid #000;
+    width: 70%;
+    margin: 0 auto; 
+    background-color: #fff;
+
+    &_title {
+      width: 300px;
+      justify-content: flex-start;
+      font-weight: 600;  
+      color: #485454;
+    }
+    &_content{
+      width: 300px;
+      text-align: left;
+    }
+  } 
 }
