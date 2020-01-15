@@ -9,7 +9,7 @@ html,body {
   width: 100% !important;
   font-size: 62.5%;
   letter-spacing: 0;
-  font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+  font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif!important;
 }
 
 body,
@@ -33,17 +33,6 @@ body,
 	display: flex;
 	justify-content: space-around;
   align-items: center;
-  
-  // width: 1120px;
-	// margin: 0 auto;
-	// padding: 20px 0;
-	// display: flex;
-	// justify-content: space-around;
-	// align-items: center;
-
-  // width: 1170px;
-  // margin: 0 auto;
-  // display: flex;
   .logo {
     margin-right: 30px;
   }
@@ -92,34 +81,6 @@ body,
     padding-top: 100px;
   }
 }
-
-// .company_list {
-//   list-style: none;
-//   text-align: center;
-//   margin: 50px auto 100px;
-
-//   .company_info {
-//     padding-top: 40px;
-//     color: #485454;
-//     display: flex;
-//     padding: 2rem 0;
-
-//     border-bottom: 1px solid #000;
-
-//     &_title {
-//       width: 300px;
-//       text-align: left;
-//       justify-content: flex-start;
-//       font-weight: 600;
-//       color: #485454;
-//     }
-//     &_content{
-//       width: 300px;
-//       text-align: left;
-      
-//     }
-//   } 
-// }
 
 .footer {
   background: #2a2b32;
