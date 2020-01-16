@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post 'contacts' => 'contacts#create'
 
 
-  get 'co_info' => 'pages#co_info'
+  get 'company' => 'pages#company'
   get 'contact' => 'pages#contact'
   get 'service' => 'pages#service'
 end

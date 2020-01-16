@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   def index
   end
 
-  def co_info
+  def company
   end
 
   def contact
